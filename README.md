@@ -114,6 +114,64 @@ python3 hipages_agent.py tools     # list Cotlet.dev tools
 python3 hipages_agent.py serve     # start the stdio MCP server (same as no argument)
 ```
 
+## What you can ask your AI to do in hipages
+
+These are real jobs hipages users asked about. Cotlet lets ChatGPT, Claude or any MCP client do them in your own signed-in hipages account.
+
+### Leads
+
+#### Can ChatGPT or Claude reply to new leads first in hipages for me?
+
+Yes. hipages sends a lead to several businesses, so the first reply matters. With Cotlet, your agent reads today's new leads in your signed-in hipages for business account and drafts a reply for each, ready to send. Nothing is sent until you say yes.
+
+Ask your agent: "Show me today's new hipages leads and draft a reply to each so I am the first tradie to call back. Send nothing yet."
+
+As an API endpoint: Yes. Save the new-lead read as an endpoint in Cotlet and call it every few minutes from n8n, Make or Zapier to get new leads in your phone.
+
+#### Can ChatGPT or Claude sort the leads worth paying for in hipages for me?
+
+Yes. With Cotlet, your agent reads this week's leads in your hipages account, ranks them by job size and suburb and flags the vague ones before you accept any. Nothing is accepted until you say yes.
+
+Ask your agent: "Rank this week's hipages leads by job size and suburb and flag the vague ones before I accept any."
+
+As an API endpoint: Yes. Save the ranking as an endpoint in Cotlet and call it every morning from n8n, Make or Zapier to get the list by email.
+
+#### How do I see what I spend on hipages leads against the jobs I win?
+
+Yes. hipages has no export of your leads or charges. With Cotlet, your agent reads your leads, quotes and billing in your signed-in account and adds up what you spent this month, how many leads became quotes and how many became won jobs.
+
+Ask your agent: "Add up what I spent on hipages leads this month and how many became quotes and won jobs."
+
+As an API endpoint: Yes. Save the spend table as an endpoint in Cotlet that returns JSON, and call it on the first of each month from n8n, Make or a script.
+
+### Quotes and reviews
+
+#### Can ChatGPT or Claude chase quotes with no answer in hipages for me?
+
+Yes. With Cotlet, your agent lists the quotes you sent from hipages leads with no reply after 3 days and drafts a follow-up text for each customer. Nothing is sent until you say yes.
+
+Ask your agent: "List quotes I sent from hipages leads with no reply after 3 days and draft a follow-up text for each."
+
+As an API endpoint: Yes. Save the quote list as an endpoint in Cotlet and call it every Monday from n8n, Make or Zapier to get customers and days since you sent each quote.
+
+#### Can ChatGPT or Claude send review requests in hipages for me?
+
+Partly. The hipages app lets you request reviews across hipages and Google from one dashboard. With Cotlet, your agent lists jobs finished this week and drafts a review request for each customer. Nothing is sent until you say yes.
+
+Ask your agent: "List hipages jobs finished this week and draft a review request for each customer. Send nothing yet."
+
+As an API endpoint: Yes. Save the finished-jobs list as an endpoint in Cotlet and call it every Friday from n8n, Make or Zapier.
+
+### Invoices and Xero
+
+#### Can ChatGPT or Claude check that my hipages invoices are in Xero?
+
+Partly. hipages syncs invoices and customer details with Xero on its own. With Cotlet, your agent compares this month's hipages invoices with the ones in Xero, both signed in in your Cloud Browser, and lists the missing ones. Nothing changes in Xero until you say yes.
+
+Ask your agent: "Check that every hipages invoice from this month is in Xero and list the ones that are missing."
+
+As an API endpoint: Yes. Save the comparison as an endpoint in Cotlet and call it monthly from n8n, Make or Zapier to get the missing invoices by email.
+
 ## Questions from hipages users
 
 **Does hipages have an API for tradies?**
